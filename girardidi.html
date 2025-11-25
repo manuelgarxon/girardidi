@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GirarDidi - Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Componentes -->
+    <script src="components/navbar.js" defer></script>
+    <script src="components/restaurant-card.js" defer></script>
+    <script src="components/food-category.js" defer></script>
+    <script src="components/footer.js" defer></script>
+</head>
+<body class="bg-gray-50">
+
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-6">
+        <!-- Hero Section -->
+        <section class="mb-10">
+            <div class="bg-gradient-to-r from-orange-500 to-pink-500 rounded-2xl p-8 text-white">
+                <h1 class="text-4xl font-bold mb-4">Craving something delicious?</h1>
+                <p class="text-xl mb-6">Get your favorite meals delivered in minutes</p>
+                <div class="relative max-w-md">
+                    <input type="text" placeholder="Search for restaurants or dishes..." 
+                           class="w-full py-3 px-4 rounded-full text-gray-800 focus:outline-none">
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-orange-600 text-white p-2 rounded-full">
+                        <i data-feather="search"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categorías -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6">Categories</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <custom-food-category icon="coffee" name="Breakfast" color="bg-blue-100 text-blue-600"></custom-food-category>
+                <custom-food-category icon="dollar-sign" name="Deals" color="bg-green-100 text-green-600"></custom-food-category>
+                <custom-food-category icon="star" name="Top Rated" color="bg-yellow-100 text-yellow-600"></custom-food-category>
+                <custom-food-category icon="clock" name="Fast Delivery" color="bg-red-100 text-red-600"></custom-food-category>
+                <custom-food-category icon="shopping-bag" name="Groceries" color="bg-purple-100 text-purple-600"></custom-food-category>
+                <custom-food-category icon="heart" name="Healthy" color="bg-pink-100 text-pink-600"></custom-food-category>
+            </div>
+        </section>
+
+        <!-- Restaurantes populares -->
+        <section class="mb-10">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">Popular Restaurants</h2>
+                <a href="#" class="text-orange-500 font-medium">See all</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <custom-restaurant-card name="Burger Palace" rating="4.8" delivery-time="15-25 min" image="http://static.photos/food/640x360/1" category="American"></custom-restaurant-card>
+                <custom-restaurant-card name="Sushi World" rating="4.7" delivery-time="20-30 min" image="http://static.photos/food/640x360/2" category="Japanese"></custom-restaurant-card>
+                <custom-restaurant-card name="Pizza Heaven" rating="4.6" delivery-time="25-35 min" image="http://static.photos/food/640x360/3" category="Italian"></custom-restaurant-card>
+                <custom-restaurant-card name="Taco Fiesta" rating="4.5" delivery-time="15-20 min" image="http://static.photos/food/640x360/4" category="Mexican"></custom-restaurant-card>
+            </div>
+        </section>
+
+        <!-- Ofertas -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6">Special Offers</h2>
+            <div class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl p-6 text-white">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0">
+                        <h3 class="text-3xl font-bold mb-3">50% OFF</h3>
+                        <p class="text-xl mb-4">On your first order with GirarDidi</p>
+                        <button class="bg-white text-purple-600 font-bold py-2 px-6 rounded-full">
+                            Order Now
+                        </button>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="http://static.photos/food/640x360/5" alt="Special Offer" class="rounded-lg max-h-60">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
