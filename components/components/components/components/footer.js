@@ -12,14 +12,14 @@ class CustomFooter extends HTMLElement {
                 <div>
                     <h3 class="text-lg font-bold mb-3 text-white">Quick Links</h3>
                     <ul>
-                        <li><a href="#" class="hover:text-orange-400">Restaurants</a></li>
-                        <li><a href="#" class="hover:text-orange-400">Offers</a></li>
-                        <li><a href="#" class="hover:text-orange-400">Help</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Restaurantes</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Ofertas</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Ayuda</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-bold mb-3 text-white">Follow Us</h3>
+                    <h3 class="text-lg font-bold mb-3 text-white">Siguenos</h3>
                     <div class="flex space-x-4">
                         <i data-feather="facebook"></i>
                         <i data-feather="instagram"></i>
@@ -28,7 +28,7 @@ class CustomFooter extends HTMLElement {
                 </div>
             </div>
 
-            <p class="text-center mt-6 text-gray-500">© 2025 GirarDidi. All rights reserved.</p>
+            <p class="text-center mt-6 text-gray-500">© 2025 GirarDidi. Todos Los Derechos Reservados.</p>
         </footer>
         `;
         feather.replace();

@@ -13,10 +13,10 @@ class CustomNavbar extends HTMLElement {
 
                 <!-- MENU DESKTOP -->
                 <div class="hidden md:flex items-center space-x-8 text-gray-700 font-medium">
-                    <a href="#" class="hover:text-orange-500 transition">Home</a>
-                    <a href="#" class="hover:text-orange-500 transition">Restaurants</a>
-                    <a href="#" class="hover:text-orange-500 transition">Offers</a>
-                    <a href="#" class="hover:text-orange-500 transition">Help</a>
+                    <a href="#" class="hover:text-orange-500 transition">Inicio</a>
+                    <a href="#" class="hover:text-orange-500 transition">Restaurantes</a>
+                    <a href="#" class="hover:text-orange-500 transition">Ofertas</a>
+                    <a href="#" class="hover:text-orange-500 transition">Ayuda</a>
 
                     <button class="relative hover:text-orange-500" id="cartButton">
                         <i data-feather="shopping-cart"></i>
@@ -41,19 +41,19 @@ class CustomNavbar extends HTMLElement {
             <div id="mobileMenu"
                  class="hidden flex-col bg-white shadow-lg p-4 mt-4 rounded-xl md:hidden text-gray-700">
 
-                <a href="#" class="py-2 border-b hover:text-orange-500">Home</a>
-                <a href="#" class="py-2 border-b hover:text-orange-500">Restaurants</a>
-                <a href="#" class="py-2 border-b hover:text-orange-500">Offers</a>
-                <a href="#" class="py-2 border-b hover:text-orange-500">Help</a>
+                <a href="#" class="py-2 border-b hover:text-orange-500">Inicio</a>
+                <a href="#" class="py-2 border-b hover:text-orange-500">Restaurantes</a>
+                <a href="#" class="py-2 border-b hover:text-orange-500">Ofertas</a>
+                <a href="#" class="py-2 border-b hover:text-orange-500">Ayuda</a>
 
                 <div class="flex items-center justify-between py-3">
                     <button class="flex items-center space-x-2" id="cartButtonMobile">
-                        <i data-feather="shopping-cart"></i>
+                        <i data-feather="Tu Carrito"></i>
                         <span>Cart (<span id="cartCountMobile">0</span>)</span>
                     </button>
 
                     <button class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
-                        Login
+                        Registrate
                     </button>
                 </div>
             </div>
